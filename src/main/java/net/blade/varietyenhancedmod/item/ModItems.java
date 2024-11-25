@@ -12,9 +12,13 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item SPORE_EMPEROR_HEART = registerItem("spore_emperor_heart", new Item(new Item.Settings ()));
+    public static final Item RAW_MYCELIUM = registerItem("raw_mycelium", new Item(new Item.Settings ())) ;
+    public static final Item MYCELIUM_PLATE = registerItem("mycelium_plate" , new Item(new Item.Settings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(SPORE_EMPEROR_HEART);
+        entries.add(RAW_MYCELIUM);
+        entries.add(MYCELIUM_PLATE);
     }
 
     private static Item registerItem(String name, Item item) {
