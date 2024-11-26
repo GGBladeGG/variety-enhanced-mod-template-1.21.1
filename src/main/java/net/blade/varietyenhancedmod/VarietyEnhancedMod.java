@@ -1,5 +1,6 @@
 package net.blade.varietyenhancedmod;
 
+import net.blade.varietyenhancedmod.block.ModBlocks;
 import net.blade.varietyenhancedmod.item.ModItemGroups;
 import net.blade.varietyenhancedmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -16,5 +17,6 @@ public class VarietyEnhancedMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
