@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "catergory": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "varietyenhancedmod:mycelium_ingot"
+    }
+  },
+  "result": {
+    "id": "varietyenhancedmod:mycelium_block"
+  }
+}

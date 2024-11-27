@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "varietyenhancedmod:block_of_raw_mycelium",
+    "varietyenhancedmod:mycelium_block",
+    "varietyenhancedmod:mycelium_ore",
+    "varietyenhancedmod:deepslate_mycelium_ore"
+
+  ]
+}

@@ -1,8 +1,12 @@
 {
   "item.varietyenhancedmod.spore_emperor_heart": "Spore Emperor Heart",
   "item.varietyenhancedmod.raw_mycelium": "Raw Mycelium",
-  "item.varietyenhancedmod.mycelium_plate": "Mycelium Plate",
+  "item.varietyenhancedmod.mycelium_ingot": "Mycelium Ingot",
 
-  "block.varietyenhancedmod.block_of_raw_mycelium": "Block of Raw Mycelium"
+  "block.varietyenhancedmod.block_of_raw_mycelium": "Block of Raw Mycelium",
+  "block.varietyenhancedmod.mycelium_block": "Mycelium Block",
+
+  "block.varietyenhancedmod.mycelium_ore": "Mycelium Ore",
+  "block.varietyenhancedmod.deepslate_mycelium_ore": "Deepslate Mycelium Ore"
 
 }

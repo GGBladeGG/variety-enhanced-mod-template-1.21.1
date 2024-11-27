@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "varietyenhancedmod:mycelium_block"
+    }
+  ],
+  "result": {
+    "id": "varietyenhancedmod:mycelium_ingot",
+    "count": 9
+  }
+}

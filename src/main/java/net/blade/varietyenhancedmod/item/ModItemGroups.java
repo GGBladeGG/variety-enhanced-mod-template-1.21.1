@@ -17,11 +17,16 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("Variety Enhanced Mod"))
                     .icon(() -> new ItemStack(ModItems.SPORE_EMPEROR_HEART)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RAW_MYCELIUM);
-                        entries.add(ModItems.MYCELIUM_PLATE);
+                        entries.add(ModItems.MYCELIUM_INGOT);
                         entries.add(ModItems.SPORE_EMPEROR_HEART);
 
 
                         entries.add(ModBlocks.BLOCK_OF_RAW_MYCELIUM);
+                        entries.add(ModBlocks.MYCELIUM_BLOCK);
+
+                        entries.add(ModBlocks.MYCELIUM_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_MYCELIUM_ORE);
+
 
                     }).build());
 
