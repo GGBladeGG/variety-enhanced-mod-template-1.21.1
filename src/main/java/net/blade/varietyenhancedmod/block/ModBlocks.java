@@ -28,15 +28,16 @@ public class ModBlocks {
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),AbstractBlock.Settings.copy(Blocks.STONE).strength(2.5f)));
     public static final Block DEEPSLATE_MYCELIUM_ORE = registerBlock("deepslate_mycelium_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),AbstractBlock.Settings.copy(Blocks.DEEPSLATE).strength(4.5f)));
-
-
+    
     private static void addItemsToNaturalItemGroup(FabricItemGroupEntries entries) {
         entries.add(BLOCK_OF_RAW_MYCELIUM);
-        entries.add(MYCELIUM_BLOCK);
 
         entries.add(MYCELIUM_ORE);
         entries.add(DEEPSLATE_MYCELIUM_ORE);
 
+    }
+    private static void addItemsToBuildingBlocksItemGroup(FabricItemGroupEntries entries) {
+        entries.add(MYCELIUM_BLOCK);
     }
 
     private static Block registerBlock(String name, Block block) {
@@ -53,5 +54,7 @@ public class ModBlocks {
         VarietyEnhancedMod.LOGGER.info("Registering ModBlocks for " + VarietyEnhancedMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModBlocks::addItemsToNaturalItemGroup);
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(ModBlocks::addItemsToBuildingBlocksItemGroup);
     }
 }

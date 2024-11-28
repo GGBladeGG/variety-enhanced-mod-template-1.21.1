@@ -20,6 +20,8 @@ public class ModItemGroups {
                         entries.add(ModItems.MYCELIUM_INGOT);
                         entries.add(ModItems.SPORE_EMPEROR_HEART);
 
+                        entries.add(ModItems.GLOW_SHROOM);
+
 
                         entries.add(ModBlocks.BLOCK_OF_RAW_MYCELIUM);
                         entries.add(ModBlocks.MYCELIUM_BLOCK);
