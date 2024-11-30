@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mycelium_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "varietyenhancedmod:mycelium_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:mycelium_ingot_from_blasting_mycelium_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mycelium_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:mycelium_ingot_from_blasting_mycelium_ore"
+    ]
+  }
+}

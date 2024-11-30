@@ -21,10 +21,24 @@ public class ModItemGroups {
                         entries.add(ModItems.SPORE_EMPEROR_HEART);
 
                         entries.add(ModItems.GLOW_SHROOM);
+                        entries.add(ModItems.GLOOM_SHROOM);
 
 
                         entries.add(ModBlocks.BLOCK_OF_RAW_MYCELIUM);
                         entries.add(ModBlocks.MYCELIUM_BLOCK);
+
+                        entries.add(ModBlocks.MYCELIUM_STAIRS);
+                        entries.add(ModBlocks.MYCELIUM_SLAB);
+
+                        entries.add(ModBlocks.MYCELIUM_BUTTON);
+                        entries.add(ModBlocks.MYCELIUM_PRESSURE_PLATE);
+
+                        entries.add(ModBlocks.MYCELIUM_FENCE);
+                        entries.add(ModBlocks.MYCELIUM_FENCE_GATE);
+                        entries.add(ModBlocks.MYCELIUM_WALL);
+
+                        entries.add(ModBlocks.MYCELIUM_DOOR);
+                        entries.add(ModBlocks.MYCELIUM_TRAPDOOR);
 
                         entries.add(ModBlocks.MYCELIUM_ORE);
                         entries.add(ModBlocks.DEEPSLATE_MYCELIUM_ORE);

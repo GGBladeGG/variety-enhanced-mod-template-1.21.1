@@ -3,10 +3,7 @@ package net.blade.varietyenhancedmod.block;
 import net.blade.varietyenhancedmod.VarietyEnhancedMod;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -21,6 +18,29 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.copy(Blocks.RAW_IRON_BLOCK)));
     public static final Block MYCELIUM_BLOCK = registerBlock("mycelium_block",
             new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK)));
+
+    public static final Block MYCELIUM_STAIRS = registerBlock("mycelium_stairs",
+            new StairsBlock(ModBlocks.MYCELIUM_BLOCK.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(2f).requiresTool()));
+    public static final Block MYCELIUM_SLAB = registerBlock("mycelium_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+
+    public static final Block MYCELIUM_BUTTON = registerBlock("mycelium_button",
+            new ButtonBlock(BlockSetType.IRON, 20, AbstractBlock.Settings.create().strength(2f).requiresTool().noCollision()));
+    public static final Block MYCELIUM_PRESSURE_PLATE = registerBlock("mycelium_pressure_plate",
+            new PressurePlateBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2f).requiresTool()));
+
+    public static final Block MYCELIUM_FENCE = registerBlock("mycelium_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+    public static final Block MYCELIUM_FENCE_GATE = registerBlock("mycelium_fence_gate",
+            new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.create().strength(2f).requiresTool()));
+    public static final Block MYCELIUM_WALL = registerBlock("mycelium_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+
+    public static final Block MYCELIUM_DOOR = registerBlock("mycelium_door",
+            new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque()));
+    public static final Block MYCELIUM_TRAPDOOR = registerBlock("mycelium_trapdoor",
+            new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque()));
 
 
 

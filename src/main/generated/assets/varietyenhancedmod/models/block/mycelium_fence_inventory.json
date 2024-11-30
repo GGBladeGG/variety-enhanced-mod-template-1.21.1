@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_inventory",
+  "textures": {
+    "texture": "varietyenhancedmod:block/mycelium_block"
+  }
+}

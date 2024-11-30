@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_mycelium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "varietyenhancedmod:raw_mycelium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:block_of_raw_mycelium"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_mycelium"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:block_of_raw_mycelium"
+    ]
+  }
+}

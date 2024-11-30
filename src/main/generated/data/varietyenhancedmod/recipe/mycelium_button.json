@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "varietyenhancedmod:mycelium_ingot"
+    }
+  },
+  "pattern": [
+    "   ",
+    " M ",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "varietyenhancedmod:mycelium_button"
+  }
+}

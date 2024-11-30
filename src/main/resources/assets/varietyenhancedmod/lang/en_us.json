@@ -2,10 +2,25 @@
   "item.varietyenhancedmod.spore_emperor_heart": "Spore Emperor Heart",
   "item.varietyenhancedmod.raw_mycelium": "Raw Mycelium",
   "item.varietyenhancedmod.mycelium_ingot": "Mycelium Ingot",
+
   "item.varietyenhancedmod.glow_shroom": "Glow Shroom",
+  "item.varietyenhancedmod.gloom_shroom": "Gloom Shroom",
 
   "block.varietyenhancedmod.block_of_raw_mycelium": "Block of Raw Mycelium",
+
   "block.varietyenhancedmod.mycelium_block": "Mycelium Block",
+  "block.varietyenhancedmod.mycelium_stairs": "Mycelium Stairs",
+  "block.varietyenhancedmod.mycelium_slab": "Mycelium Slab",
+
+  "block.varietyenhancedmod.mycelium_button": "Mycelium Button",
+  "block.varietyenhancedmod.mycelium_pressure_plate": "Mycelium Pressure Plate",
+
+  "block.varietyenhancedmod.mycelium_fence": "Mycelium Fence",
+  "block.varietyenhancedmod.mycelium_fence_gate": "Mycelium Fence Gate",
+  "block.varietyenhancedmod.mycelium_wall": "Mycelium Wall",
+
+  "block.varietyenhancedmod.mycelium_door": "Mycelium Door",
+  "block.varietyenhancedmod.mycelium_trapdoor": "Mycelium Trapdoor",
 
   "block.varietyenhancedmod.mycelium_ore": "Mycelium Ore",
   "block.varietyenhancedmod.deepslate_mycelium_ore": "Deepslate Mycelium Ore"

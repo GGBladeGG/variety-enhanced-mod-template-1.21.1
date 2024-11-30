@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "mycelium_ingot",
+  "ingredient": {
+    "item": "varietyenhancedmod:deepslate_mycelium_ore"
+  },
+  "result": {
+    "id": "varietyenhancedmod:mycelium_ingot"
+  }
+}

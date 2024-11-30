@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "varietyenhancedmod:block/mycelium_block",
+    "side": "varietyenhancedmod:block/mycelium_block",
+    "top": "varietyenhancedmod:block/mycelium_block"
+  }
+}

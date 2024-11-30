@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deepslate_mycelium_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "varietyenhancedmod:deepslate_mycelium_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:mycelium_ingot_from_smelting_deepslate_mycelium_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_deepslate_mycelium_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:mycelium_ingot_from_smelting_deepslate_mycelium_ore"
+    ]
+  }
+}
