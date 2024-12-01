@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right_open",
+  "textures": {
+    "bottom": "varietyenhancedmod:block/mycelium_door_bottom",
+    "top": "varietyenhancedmod:block/mycelium_door_top"
+  }
+}
