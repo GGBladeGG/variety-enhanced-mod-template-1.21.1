@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
@@ -57,6 +58,50 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.MYCELIUM_INGOT), conditionsFromItem(ModItems.MYCELIUM_INGOT))
                 .offerTo(exporter);
         offerWallRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.MYCELIUM_WALL, ModItems.MYCELIUM_INGOT);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.MYCELIUM_SWORD, 1)
+                .pattern(" M ")
+                .pattern(" M ")
+                .pattern(" / ")
+                .input('M', ModItems.MYCELIUM_INGOT)
+                .input('/', Items.STICK)
+                .criterion(hasItem(ModItems.MYCELIUM_INGOT), conditionsFromItem(ModItems.MYCELIUM_INGOT))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.MYCELIUM_DRILL, 1)
+                .pattern(" A ")
+                .pattern("MDM")
+                .pattern("R/R")
+                .input('M', ModItems.MYCELIUM_INGOT)
+                .input('/', Items.BLAZE_ROD)
+                .input('D', Items.DRAGON_BREATH)
+                .input('R', Items.REDSTONE)
+                .input('A', Items.AMETHYST_SHARD)
+                .criterion(hasItem(ModItems.MYCELIUM_INGOT), conditionsFromItem(ModItems.MYCELIUM_INGOT))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.MYCELIUM_SHOVEL, 1)
+                .pattern(" M ")
+                .pattern(" / ")
+                .pattern(" / ")
+                .input('M', ModItems.MYCELIUM_INGOT)
+                .input('/', Items.STICK)
+                .criterion(hasItem(ModItems.MYCELIUM_INGOT), conditionsFromItem(ModItems.MYCELIUM_INGOT))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.MYCELIUM_AXE, 1)
+                .pattern("MM ")
+                .pattern("M/ ")
+                .pattern(" / ")
+                .input('M', ModItems.MYCELIUM_INGOT)
+                .input('/', Items.STICK)
+                .criterion(hasItem(ModItems.MYCELIUM_INGOT), conditionsFromItem(ModItems.MYCELIUM_INGOT))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.MYCELIUM_HOE, 1)
+                .pattern("MM ")
+                .pattern(" / ")
+                .pattern(" / ")
+                .input('M', ModItems.MYCELIUM_INGOT)
+                .input('/', Items.STICK)
+                .criterion(hasItem(ModItems.MYCELIUM_INGOT), conditionsFromItem(ModItems.MYCELIUM_INGOT))
+                .offerTo(exporter);
 
 
 

@@ -43,6 +43,12 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MYCELIUM_ORE);
                         entries.add(ModBlocks.DEEPSLATE_MYCELIUM_ORE);
 
+                        entries.add(ModItems.MYCELIUM_SWORD);
+                        entries.add(ModItems.MYCELIUM_DRILL);
+                        entries.add(ModItems.MYCELIUM_SHOVEL);
+                        entries.add(ModItems.MYCELIUM_AXE);
+                        entries.add(ModItems.MYCELIUM_HOE);
+
 
                     }).build());
 

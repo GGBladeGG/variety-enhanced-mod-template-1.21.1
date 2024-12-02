@@ -58,6 +58,19 @@ public class ModBlocks {
     }
     private static void addItemsToBuildingBlocksItemGroup(FabricItemGroupEntries entries) {
         entries.add(MYCELIUM_BLOCK);
+        entries.add(MYCELIUM_STAIRS);
+        entries.add(MYCELIUM_SLAB);
+        entries.add(MYCELIUM_FENCE);
+        entries.add(MYCELIUM_FENCE_GATE);
+        entries.add(MYCELIUM_WALL);
+        entries.add(MYCELIUM_DOOR);
+        entries.add(MYCELIUM_TRAPDOOR);
+    }
+    private static void addItemsToRedstoneItemGroup(FabricItemGroupEntries entries) {
+        entries.add(MYCELIUM_BUTTON);
+        entries.add(MYCELIUM_PRESSURE_PLATE);
+        entries.add(MYCELIUM_DOOR);
+        entries.add(MYCELIUM_TRAPDOOR);
     }
 
     private static Block registerBlock(String name, Block block) {
@@ -76,5 +89,7 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModBlocks::addItemsToNaturalItemGroup);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(ModBlocks::addItemsToBuildingBlocksItemGroup);
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(ModBlocks::addItemsToRedstoneItemGroup);
     }
 }

@@ -1,6 +1,7 @@
 package net.blade.varietyenhancedmod.datagen;
 
 import net.blade.varietyenhancedmod.block.ModBlocks;
+import net.blade.varietyenhancedmod.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryKeys;
@@ -39,6 +40,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.MYCELIUM_FENCE);
         getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.MYCELIUM_FENCE_GATE);
         getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.MYCELIUM_WALL);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_MYCELIUM_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
 
 
     }

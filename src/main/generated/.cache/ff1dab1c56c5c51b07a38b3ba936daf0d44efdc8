@@ -1,9 +1,10 @@
-// 1.21.1	2024-11-30T22:46:42.7063633	Variety Enhanced Mod/Tags for minecraft:block
-9ee04fc71e7dfe4b7542d54cd8ea18b64a02cbb1 data\minecraft\tags\block\fences.json
+// 1.21.1	2024-12-02T14:03:47.3457084	Variety Enhanced Mod/Tags for minecraft:block
 2a311c1ea3157b68a613cd2a59e03a1f7d068c6e data\minecraft\tags\block\walls.json
+9ee04fc71e7dfe4b7542d54cd8ea18b64a02cbb1 data\minecraft\tags\block\fences.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\fabric\tags\block\needs_tool_level_4.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\block\needs_stone_tool.json
 c857ee1622af7bb2525af7ad1936a24055f0b0d9 data\minecraft\tags\block\fence_gates.json
 634f205a0422ccf54b0e4a784a88f5dd12365aa0 data\minecraft\tags\block\mineable\pickaxe.json
-634f205a0422ccf54b0e4a784a88f5dd12365aa0 data\minecraft\tags\block\needs_diamond_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\block\needs_iron_tool.json
+634f205a0422ccf54b0e4a784a88f5dd12365aa0 data\minecraft\tags\block\needs_diamond_tool.json
+a249c46329a41538f49a564e1f14338aaf1be5a0 data\varietyenhancedmod\tags\block\needs_mycelium_tool.json

@@ -1,24 +1,50 @@
 package net.blade.varietyenhancedmod.item;
 
 import net.blade.varietyenhancedmod.VarietyEnhancedMod;
+import net.blade.varietyenhancedmod.item.custom.DrillItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item SPORE_EMPEROR_HEART = registerItem("spore_emperor_heart", new Item(new Item.Settings ()));
-    public static final Item RAW_MYCELIUM = registerItem("raw_mycelium", new Item(new Item.Settings ())) ;
-    public static final Item MYCELIUM_INGOT = registerItem("mycelium_ingot" , new Item(new Item.Settings()));
+    public static final Item SPORE_EMPEROR_HEART = registerItem("spore_emperor_heart", new Item(new Item.Settings()));
+    public static final Item RAW_MYCELIUM = registerItem("raw_mycelium", new Item(new Item.Settings()));
+    public static final Item MYCELIUM_INGOT = registerItem("mycelium_ingot", new Item(new Item.Settings()));
 
-    public static final Item GLOW_SHROOM = registerItem("glow_shroom" , new Item(new Item.Settings().food(ModFoodComponents.GLOW_SHROOM)));
-    public static final Item GLOOM_SHROOM = registerItem("gloom_shroom" , new Item(new Item.Settings().food(ModFoodComponents.GLOOM_SHROOM)));
+    public static final Item GLOW_SHROOM = registerItem("glow_shroom", new Item(new Item.Settings().food(ModFoodComponents.GLOW_SHROOM)));
+    public static final Item GLOOM_SHROOM = registerItem("gloom_shroom", new Item(new Item.Settings().food(ModFoodComponents.GLOOM_SHROOM)));
+
+
+
+
+
+
+
+    public static final Item MYCELIUM_SWORD = registerItem("mycelium_sword",
+            new SwordItem(ModToolMaterials.MYCELIUM, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.MYCELIUM, 3, -2.4f))));
+    public static final Item MYCELIUM_DRILL = registerItem("mycelium_drill",
+            new DrillItem(ModToolMaterials.MYCELIUM, new Item.Settings()
+                    .attributeModifiers(DrillItem.createAttributeModifiers(ModToolMaterials.MYCELIUM, 1, -1.8f))));
+    public static final Item MYCELIUM_SHOVEL = registerItem("mycelium_shovel",
+            new ShovelItem(ModToolMaterials.MYCELIUM, new Item.Settings()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.MYCELIUM, 1, -2.4f))));
+    public static final Item MYCELIUM_AXE = registerItem("mycelium_axe",
+            new AxeItem(ModToolMaterials.MYCELIUM, new Item.Settings()
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.MYCELIUM, 6, -3.2f))));
+    public static final Item MYCELIUM_HOE = registerItem("mycelium_hoe",
+            new HoeItem(ModToolMaterials.MYCELIUM, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.MYCELIUM, 6, -3f))));
 
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(VarietyEnhancedMod.MOD_ID, name), item);
+
+
+
+
     }
 
     public static void registerModItems() {
@@ -34,8 +60,20 @@ public class ModItems {
          ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
              entries.add(GLOW_SHROOM);
              entries.add(GLOOM_SHROOM);
+                 });
 
-         });
+         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
+             entries.add(MYCELIUM_DRILL);
+             entries.add(MYCELIUM_SHOVEL);
+             entries.add(MYCELIUM_AXE);
+             entries.add(MYCELIUM_HOE);
+                 });
+
+         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
+             entries.add(MYCELIUM_SWORD);
+             entries.add(MYCELIUM_AXE);
+                 });
     }
 
 }
+
