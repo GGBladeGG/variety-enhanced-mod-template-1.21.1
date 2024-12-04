@@ -1,62 +1,58 @@
 package net.blade.varietyenhancedmod.item;
 
+import com.google.common.base.Suppliers;
 import net.blade.varietyenhancedmod.util.ModTags;
 import net.minecraft.block.Block;
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.TagKey;
 
+import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-
-    MYCELIUM_TOOL(
-            1850,
-            10.0F,
-            5.0F,
+    MYCELIUM_INGOT(
             ModTags.Blocks.INCORRECT_FOR_MYCELIUM_TOOL,
+            1800,
+            9.0F,
+            5.0F,
             22,
-            Ingredient.ofItems(ModItems.MYCELIUM_INGOT)
-
-
+            () -> Ingredient.ofItems(ModItems.MYCELIUM_INGOT)
     ),
-
-
 
     MYCELIUM_DRILL(
-            1850,
-           10.0F,
+            ModTags.Blocks.INCORRECT_FOR_MYCELIUM_DRILL,
+            1800,
+            11.0F,
             5.0F,
-                  ModTags.Blocks.INCORRECT_FOR_MYCELIUM_DRILL,
-          22,
-                  Ingredient.ofItems(ModItems.MYCELIUM_INGOT)
-
-
+            22,
+            () -> Ingredient.ofItems(ModItems.MYCELIUM_INGOT)
     ),
 
-
     DIAMOND_DRILL(
-            1850,
-            10.0F,
-            5.0F,
             ModTags.Blocks.INCORRECT_FOR_DIAMOND_DRILL,
-            22,
-                 Ingredient.ofItems(ModItems.DIAMOND_DRILL)
-
+            1561,
+            9.0F,
+            5.0F,
+            15,
+            () -> Ingredient.ofItems(Items.DIAMOND)
     );
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;
-    private final float miningSpeed, attackDamage;
+    private final float miningSpeed;
+    private final float attackDamage;
     private final int enchantability;
-    private final Ingredient repairIngredient;
+    private final Supplier<Ingredient> repairIngredient;
 
-    ModToolMaterials(int itemDurability, float miningSpeed, float attackDamage, final TagKey<Block> inverseTag, int enchantability, final Ingredient repairIngredient) {
+    ModToolMaterials(final TagKey<Block> inverseTag, final int itemDurability, final float miningSpeed,
+                             final float attackDamage, final int enchantability, final Supplier<Ingredient> repairIngredient) {
         this.inverseTag = inverseTag;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;
         this.attackDamage = attackDamage;
         this.enchantability = enchantability;
-        this.repairIngredient = repairIngredient;
+        this.repairIngredient = Suppliers.memoize(repairIngredient::get);
     }
 
     public int getDurability() {
@@ -80,7 +76,7 @@ public enum ModToolMaterials implements ToolMaterial {
     }
 
     public Ingredient getRepairIngredient() {
-        return this.repairIngredient;
+        return this.repairIngredient.get();
     }
 
 

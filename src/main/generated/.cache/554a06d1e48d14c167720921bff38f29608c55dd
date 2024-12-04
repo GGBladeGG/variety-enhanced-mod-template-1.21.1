@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-02T14:03:47.346708	Variety Enhanced Mod/Model Definitions
+// 1.21.1	2024-12-04T23:33:27.9175526	Variety Enhanced Mod/Model Definitions
 1c025a8cb21c3a8f9e4f8f0a6d89d8383fd5f23c assets\varietyenhancedmod\models\block\mycelium_fence_gate_wall_open.json
 d898f0c5e3526d3eeacdc5c6a0cdf0093a762355 assets\varietyenhancedmod\blockstates\mycelium_pressure_plate.json
 55c2c5b0bfcf6b927b161d2031ba1889259f6e72 assets\varietyenhancedmod\models\block\mycelium_door_bottom_right.json
@@ -40,6 +40,7 @@ a01e28b0431da17abeb6717798da2d8e81ea4d80 assets\varietyenhancedmod\blockstates\m
 e7428e27f190a567c9c5ba019f2ba53fc0912be1 assets\varietyenhancedmod\models\block\mycelium_pressure_plate_down.json
 a67d17c76a68e750ec07d2b40cb566d1f8f05f98 assets\varietyenhancedmod\blockstates\mycelium_fence_gate.json
 717d594f23574c51957e6cd13f6d940735ce4df3 assets\varietyenhancedmod\models\block\mycelium_fence_gate_open.json
+5fddb3ea3e87f676d75a0eec76748203473d2b77 assets\varietyenhancedmod\models\item\diamond_drill.json
 bb1c51fe1ef72b96c1fa03b594ea261580879d5e assets\varietyenhancedmod\models\block\mycelium_pressure_plate.json
 a0264ada79888d8d0d57b200f327b13c50bf4ec6 assets\varietyenhancedmod\models\block\mycelium_slab_top.json
 5ce68bec9f8f3d876231de694dfb24b73fb9b432 assets\varietyenhancedmod\models\item\mycelium_stairs.json

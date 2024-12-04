@@ -47,10 +47,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SPORE_EMPEROR_HEART, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.MYCELIUM_SWORD, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.MYCELIUM_DRILL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.MYCELIUM_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.MYCELIUM_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.MYCELIUM_HOE, Models.HANDHELD);
-
+        
+        itemModelGenerator.register(ModItems.MYCELIUM_DRILL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIAMOND_DRILL, Models.HANDHELD);
     }
 }

@@ -23,21 +23,24 @@ public class ModItems {
 
 
     public static final Item MYCELIUM_SWORD = registerItem("mycelium_sword",
-            new SwordItem(ModToolMaterials.MYCELIUM, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.MYCELIUM, 3, -2.4f))));
-    public static final Item MYCELIUM_DRILL = registerItem("mycelium_drill",
-            new DrillItem(ModToolMaterials.MYCELIUM, new Item.Settings()
-                    .attributeModifiers(DrillItem.createAttributeModifiers(ModToolMaterials.MYCELIUM, 1, -1.8f))));
+            new SwordItem(ModToolMaterials.MYCELIUM_INGOT, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.MYCELIUM_INGOT, 3, -2.4f))));
     public static final Item MYCELIUM_SHOVEL = registerItem("mycelium_shovel",
-            new ShovelItem(ModToolMaterials.MYCELIUM, new Item.Settings()
-                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.MYCELIUM, 1, -2.4f))));
+            new ShovelItem(ModToolMaterials.MYCELIUM_INGOT, new Item.Settings()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.MYCELIUM_INGOT, 1, -2.4f))));
     public static final Item MYCELIUM_AXE = registerItem("mycelium_axe",
-            new AxeItem(ModToolMaterials.MYCELIUM, new Item.Settings()
-                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.MYCELIUM, 6, -3.2f))));
+            new AxeItem(ModToolMaterials.MYCELIUM_INGOT, new Item.Settings()
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.MYCELIUM_INGOT, 6, -3.2f))));
     public static final Item MYCELIUM_HOE = registerItem("mycelium_hoe",
-            new HoeItem(ModToolMaterials.MYCELIUM, new Item.Settings()
-                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.MYCELIUM, 6, -3f))));
+            new HoeItem(ModToolMaterials.MYCELIUM_INGOT, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.MYCELIUM_INGOT, 6, -3f))));
 
+    public static final Item MYCELIUM_DRILL = registerItem("mycelium_drill",
+            new DrillItem(ModToolMaterials.MYCELIUM_INGOT, new Item.Settings()
+                    .attributeModifiers(DrillItem.createAttributeModifiers(ModToolMaterials.MYCELIUM_INGOT, 1, -1.8f))));
+    public static final Item DIAMOND_DRILL = registerItem("diamond_drill",
+            new DrillItem(ToolMaterials.DIAMOND, new Item.Settings()
+                    .attributeModifiers(DrillItem.createAttributeModifiers(ToolMaterials.DIAMOND, 1, -1.8f))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(VarietyEnhancedMod.MOD_ID, name), item);
@@ -64,6 +67,7 @@ public class ModItems {
 
          ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
              entries.add(MYCELIUM_DRILL);
+             entries.add(DIAMOND_DRILL);
              entries.add(MYCELIUM_SHOVEL);
              entries.add(MYCELIUM_AXE);
              entries.add(MYCELIUM_HOE);

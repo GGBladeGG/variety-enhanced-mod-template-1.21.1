@@ -22,18 +22,25 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.MYCELIUM_ORE)
                 .add(ModBlocks.DEEPSLATE_MYCELIUM_ORE)
+                .add(ModBlocks.MYCELIUM_BLOCK)
                 .add(ModBlocks.BLOCK_OF_RAW_MYCELIUM)
-                .add(ModBlocks.MYCELIUM_BLOCK);
+                .add(ModBlocks.MYCELIUM_STAIRS)
+                .add(ModBlocks.MYCELIUM_SLAB)
+                .add(ModBlocks.MYCELIUM_BUTTON)
+                .add(ModBlocks.MYCELIUM_PRESSURE_PLATE)
+                .add(ModBlocks.MYCELIUM_FENCE)
+                .add(ModBlocks.MYCELIUM_FENCE_GATE)
+                .add(ModBlocks.MYCELIUM_WALL)
+                .add(ModBlocks.MYCELIUM_DOOR)
+                .add(ModBlocks.MYCELIUM_TRAPDOOR);
+
+
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL) ;
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL) ;
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.MYCELIUM_ORE)
-                .add(ModBlocks.DEEPSLATE_MYCELIUM_ORE)
-                .add(ModBlocks.BLOCK_OF_RAW_MYCELIUM)
-                .add(ModBlocks.MYCELIUM_BLOCK) ;
+        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, Identifier.of("fabric", "needs_tool_level_4"))) ;
 
@@ -42,7 +49,51 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.MYCELIUM_WALL);
 
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_MYCELIUM_TOOL)
-                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+                .add(ModBlocks.MYCELIUM_ORE)
+                .add(ModBlocks.DEEPSLATE_MYCELIUM_ORE)
+                .add(ModBlocks.MYCELIUM_BLOCK)
+                .add(ModBlocks.BLOCK_OF_RAW_MYCELIUM)
+                .add(ModBlocks.MYCELIUM_STAIRS)
+                .add(ModBlocks.MYCELIUM_SLAB)
+                .add(ModBlocks.MYCELIUM_BUTTON)
+                .add(ModBlocks.MYCELIUM_PRESSURE_PLATE)
+                .add(ModBlocks.MYCELIUM_FENCE)
+                .add(ModBlocks.MYCELIUM_FENCE_GATE)
+                .add(ModBlocks.MYCELIUM_WALL)
+                .add(ModBlocks.MYCELIUM_DOOR)
+                .add(ModBlocks.MYCELIUM_TRAPDOOR);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_MYCELIUM_DRILL)
+                .add(ModBlocks.MYCELIUM_ORE)
+                .add(ModBlocks.DEEPSLATE_MYCELIUM_ORE)
+                .add(ModBlocks.MYCELIUM_BLOCK)
+                .add(ModBlocks.BLOCK_OF_RAW_MYCELIUM)
+                .add(ModBlocks.MYCELIUM_STAIRS)
+                .add(ModBlocks.MYCELIUM_SLAB)
+                .add(ModBlocks.MYCELIUM_BUTTON)
+                .add(ModBlocks.MYCELIUM_PRESSURE_PLATE)
+                .add(ModBlocks.MYCELIUM_FENCE)
+                .add(ModBlocks.MYCELIUM_FENCE_GATE)
+                .add(ModBlocks.MYCELIUM_WALL)
+                .add(ModBlocks.MYCELIUM_DOOR)
+                .add(ModBlocks.MYCELIUM_TRAPDOOR);
+
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_DIAMOND_DRILL)
+                .add(ModBlocks.MYCELIUM_ORE)
+                .add(ModBlocks.DEEPSLATE_MYCELIUM_ORE)
+                .add(ModBlocks.MYCELIUM_BLOCK)
+                .add(ModBlocks.BLOCK_OF_RAW_MYCELIUM)
+                .add(ModBlocks.MYCELIUM_STAIRS)
+                .add(ModBlocks.MYCELIUM_SLAB)
+                .add(ModBlocks.MYCELIUM_BUTTON)
+                .add(ModBlocks.MYCELIUM_PRESSURE_PLATE)
+                .add(ModBlocks.MYCELIUM_FENCE)
+                .add(ModBlocks.MYCELIUM_FENCE_GATE)
+                .add(ModBlocks.MYCELIUM_WALL)
+                .add(ModBlocks.MYCELIUM_DOOR)
+                .add(ModBlocks.MYCELIUM_TRAPDOOR);
+
 
 
     }

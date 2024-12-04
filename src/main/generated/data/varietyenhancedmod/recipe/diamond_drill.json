@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "/": {
+      "item": "minecraft:blaze_rod"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "D": {
+      "item": "minecraft:dragon_breath"
+    },
+    "M": {
+      "item": "minecraft:diamond"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    " A ",
+    "MDM",
+    "R/R"
+  ],
+  "result": {
+    "count": 1,
+    "id": "varietyenhancedmod:diamond_drill"
+  }
+}

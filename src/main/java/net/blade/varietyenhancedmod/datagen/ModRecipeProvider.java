@@ -25,6 +25,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public void generate(RecipeExporter exporter) {
         List<ItemConvertible> MYCELIUM_INGOT_SMELTABLES = List.of(ModItems.RAW_MYCELIUM, ModBlocks.MYCELIUM_ORE,
                 ModBlocks.DEEPSLATE_MYCELIUM_ORE);
+
         offerSmelting(exporter, MYCELIUM_INGOT_SMELTABLES, RecipeCategory.MISC, ModItems.MYCELIUM_INGOT, 0.25f, 200, "mycelium_ingot");
         offerBlasting(exporter, MYCELIUM_INGOT_SMELTABLES, RecipeCategory.MISC, ModItems.MYCELIUM_INGOT, 0.25f, 100, "mycelium_ingot");
 
@@ -59,23 +60,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
         offerWallRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.MYCELIUM_WALL, ModItems.MYCELIUM_INGOT);
 
+
+
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.MYCELIUM_SWORD, 1)
                 .pattern(" M ")
                 .pattern(" M ")
                 .pattern(" / ")
                 .input('M', ModItems.MYCELIUM_INGOT)
                 .input('/', Items.STICK)
-                .criterion(hasItem(ModItems.MYCELIUM_INGOT), conditionsFromItem(ModItems.MYCELIUM_INGOT))
-                .offerTo(exporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.MYCELIUM_DRILL, 1)
-                .pattern(" A ")
-                .pattern("MDM")
-                .pattern("R/R")
-                .input('M', ModItems.MYCELIUM_INGOT)
-                .input('/', Items.BLAZE_ROD)
-                .input('D', Items.DRAGON_BREATH)
-                .input('R', Items.REDSTONE)
-                .input('A', Items.AMETHYST_SHARD)
                 .criterion(hasItem(ModItems.MYCELIUM_INGOT), conditionsFromItem(ModItems.MYCELIUM_INGOT))
                 .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.MYCELIUM_SHOVEL, 1)
@@ -101,6 +94,29 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('M', ModItems.MYCELIUM_INGOT)
                 .input('/', Items.STICK)
                 .criterion(hasItem(ModItems.MYCELIUM_INGOT), conditionsFromItem(ModItems.MYCELIUM_INGOT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.MYCELIUM_DRILL, 1)
+                .pattern(" A ")
+                .pattern("MDM")
+                .pattern("R/R")
+                .input('M', ModItems.MYCELIUM_INGOT)
+                .input('/', Items.BLAZE_ROD)
+                .input('D', Items.DRAGON_BREATH)
+                .input('R', Items.REDSTONE)
+                .input('A', Items.AMETHYST_SHARD)
+                .criterion(hasItem(ModItems.MYCELIUM_INGOT), conditionsFromItem(ModItems.MYCELIUM_INGOT))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DIAMOND_DRILL, 1)
+                .pattern(" A ")
+                .pattern("MDM")
+                .pattern("R/R")
+                .input('M', Items.DIAMOND)
+                .input('/', Items.BLAZE_ROD)
+                .input('D', Items.DRAGON_BREATH)
+                .input('R', Items.REDSTONE)
+                .input('A', Items.AMETHYST_SHARD)
+                .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
                 .offerTo(exporter);
 
 
