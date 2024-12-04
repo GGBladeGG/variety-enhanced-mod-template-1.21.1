@@ -1,5 +1,6 @@
 package net.blade.varietyenhancedmod.item.custom;
 
+
 import net.minecraft.item.MiningToolItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.registry.tag.BlockTags;
@@ -52,5 +53,3 @@ public class DrillItem extends MiningToolItem {
         return positions;
     }
 }
-
-

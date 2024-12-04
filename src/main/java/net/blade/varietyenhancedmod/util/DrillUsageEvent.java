@@ -9,26 +9,26 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import org.jetbrains.annotations.Nullable;
+
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class DrillUsageEvent implements PlayerBlockBreakEvents.Before {
+public class DrillUsageEvent implements PlayerBlockBreakEvents.Before{
     private static final Set<BlockPos> HARVESTED_BLOCKS = new HashSet<>();
 
     @Override
     public boolean beforeBlockBreak(World world, PlayerEntity player, BlockPos pos,
-                                    BlockState state, @Nullable BlockEntity blockEntity) {
+                                    BlockState state, BlockEntity blockEntity) {
         ItemStack mainHandItem = player.getMainHandStack();
 
         if(mainHandItem.getItem() instanceof DrillItem drill && player instanceof ServerPlayerEntity serverPlayer) {
-            if (HARVESTED_BLOCKS.contains(pos)) {
+            if(HARVESTED_BLOCKS.contains(pos)) {
                 return true;
             }
 
-            for (BlockPos position : DrillItem.getBlocksToBeDestroyed(1, pos, serverPlayer)) {
-                if (pos == position || !drill.isCorrectForDrops(mainHandItem, world.getBlockState(position))) {
+            for(BlockPos position : DrillItem.getBlocksToBeDestroyed(1, pos, serverPlayer)) {
+                if(pos == position || !drill.isCorrectForDrops(mainHandItem, world.getBlockState(position))) {
                     continue;
                 }
 
@@ -40,5 +40,4 @@ public class DrillUsageEvent implements PlayerBlockBreakEvents.Before {
 
         return true;
     }
-
 }

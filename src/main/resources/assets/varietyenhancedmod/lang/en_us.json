@@ -7,10 +7,13 @@
   "item.varietyenhancedmod.gloom_shroom": "Gloom Shroom",
 
   "item.varietyenhancedmod.mycelium_sword": "Mycelium Sword",
-  "item.varietyenhancedmod.mycelium_drill": "Mycelium Drill",
   "item.varietyenhancedmod.mycelium_shovel": "Mycelium Shovel",
   "item.varietyenhancedmod.mycelium_axe": "Mycelium Axe",
   "item.varietyenhancedmod.mycelium_hoe": "Mycelium Hoe",
+
+  "item.varietyenhancedmod.mycelium_drill": "Mycelium Drill",
+  "item.varietyenhancedmod.diamond_drill": "Diamond Drill",
+  "item.varietyenhancedmod.drill_item": "Drill Item",
 
 
 
