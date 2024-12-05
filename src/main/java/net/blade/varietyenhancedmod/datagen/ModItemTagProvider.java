@@ -36,6 +36,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.MYCELIUM_HELMET)
                 .add(ModItems.MYCELIUM_CHESTPLATE)
                 .add(ModItems.MYCELIUM_LEGGINGS)
-                .add(ModItems.MYCELIUM_BOOTS);
+                .add(ModItems.MYCELIUM_BOOTS)
+                .add(ModItems.EMERALD_HELMET)
+                .add(ModItems.EMERALD_CHESTPLATE)
+                .add(ModItems.EMERALD_LEGGINGS)
+                .add(ModItems.EMERALD_BOOTS);
     }
 }

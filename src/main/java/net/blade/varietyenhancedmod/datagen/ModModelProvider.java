@@ -59,5 +59,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.MYCELIUM_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.MYCELIUM_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.MYCELIUM_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.EMERALD_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.EMERALD_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.EMERALD_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.EMERALD_BOOTS));
     }
 }

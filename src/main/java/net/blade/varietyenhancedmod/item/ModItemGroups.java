@@ -56,6 +56,11 @@ public class ModItemGroups {
                         entries.add(ModItems.MYCELIUM_LEGGINGS);
                         entries.add(ModItems.MYCELIUM_BOOTS);
 
+                        entries.add(ModItems.EMERALD_HELMET);
+                        entries.add(ModItems.EMERALD_CHESTPLATE);
+                        entries.add(ModItems.EMERALD_LEGGINGS);
+                        entries.add(ModItems.EMERALD_BOOTS);
+
 
                     }).build());
 

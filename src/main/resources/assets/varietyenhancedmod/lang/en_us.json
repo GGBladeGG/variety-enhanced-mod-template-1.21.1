@@ -14,11 +14,15 @@
   "item.varietyenhancedmod.mycelium_drill": "Mycelium Drill",
   "item.varietyenhancedmod.diamond_drill": "Diamond Drill",
 
-  "item.varietyenhancedmod.Mycelium Helmet": "Mycelium Helmet",
-  "item.varietyenhancedmod.Mycelium Chestplate": "Mycelium Chestplate",
-  "item.varietyenhancedmod.Mycelium Leggings": "Mycelium Leggings",
-  "item.varietyenhancedmod.Mycelium Boots": "Mycelium Boots",
+  "item.varietyenhancedmod.mycelium_helmet": "Mycelium Helmet",
+  "item.varietyenhancedmod.mycelium_chestplate": "Mycelium Chestplate",
+  "item.varietyenhancedmod.mycelium_leggings": "Mycelium Leggings",
+  "item.varietyenhancedmod.mycelium_boots": "Mycelium Boots",
 
+  "item.varietyenhancedmod.emerald_helmet": "Emerald Helmet",
+  "item.varietyenhancedmod.emerald_chestplate": "Emerald Chestplate",
+  "item.varietyenhancedmod.emerald_leggings": "Emerald Leggings",
+  "item.varietyenhancedmod.emerald_boots": "Emerald Boots",
 
 
   "block.varietyenhancedmod.block_of_raw_mycelium": "Block of Raw Mycelium",

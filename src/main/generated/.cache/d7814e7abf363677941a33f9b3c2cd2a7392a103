@@ -1,7 +1,7 @@
-// 1.21.1	2024-12-05T03:18:13.0750501	Variety Enhanced Mod/Tags for minecraft:item
+// 1.21.1	2024-12-05T03:38:46.0382149	Variety Enhanced Mod/Tags for minecraft:item
 e25d3be13ae2602419e484c4ae0a313e507fedcc data\minecraft\tags\item\shovels.json
 9a71f22c025a5a52fbf944927bde5f60bff23cb8 data\minecraft\tags\item\hoes.json
 db2b5e64ccb9a6e80dcf822e4bd21c18d7836d82 data\minecraft\tags\item\axes.json
 9c6cc04ace88ca7bbe64d26572b40f07b3689add data\varietyenhancedmod\tags\item\transformable_items.json
 97d73e5a6972e99c9359ae0fb499b6a7ae807326 data\minecraft\tags\item\swords.json
-83b8856d31a75ab3c26864d44f9bb251a357305d data\minecraft\tags\item\trimmable_armor.json
+2180c8dfef314994ab680d789589fa5ab8c7e79e data\minecraft\tags\item\trimmable_armor.json
