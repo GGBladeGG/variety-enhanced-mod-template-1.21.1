@@ -20,10 +20,10 @@ import java.util.function.Supplier;
 public class ModArmorMaterials {
     public static final RegistryEntry<ArmorMaterial> MYCELIUM_ARMOR_MATERIAL = registerArmorMaterial("mycelium_ingot",
             () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
-                map.put(ArmorItem.Type.BOOTS, 2);
-                map.put(ArmorItem.Type.LEGGINGS, 4);
-                map.put(ArmorItem.Type.CHESTPLATE, 6);
-                map.put(ArmorItem.Type.HELMET, 2);
+                map.put(ArmorItem.Type.BOOTS, 4);
+                map.put(ArmorItem.Type.LEGGINGS, 6);
+                map.put(ArmorItem.Type.CHESTPLATE, 8);
+                map.put(ArmorItem.Type.HELMET, 4);
                 map.put(ArmorItem.Type.BODY, 4);
             }),    20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, () -> Ingredient.ofItems(ModItems.MYCELIUM_INGOT),
                     List.of(new ArmorMaterial.Layer(Identifier.of(VarietyEnhancedMod.MOD_ID, "mycelium_ingot"))), 0, 0));
