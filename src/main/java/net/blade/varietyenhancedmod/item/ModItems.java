@@ -42,6 +42,22 @@ public class ModItems {
             new DrillItem(ToolMaterials.DIAMOND, new Item.Settings()
                     .attributeModifiers(DrillItem.createAttributeModifiers(ToolMaterials.DIAMOND, 1, -1.8f))));
 
+
+    public static final Item MYCELIUM_HELMET = registerItem("mycelium_helmet",
+            new ArmorItem(ModArmorMaterials.MYCELIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+    public static final Item MYCELIUM_LEGGINGS = registerItem("mycelium_leggings",
+            new ArmorItem(ModArmorMaterials.MYCELIUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+    public static final Item MYCELIUM_CHESTPLATE = registerItem("mycelium_chestplate",
+            new ArmorItem(ModArmorMaterials.MYCELIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+    public static final Item MYCELIUM_BOOTS = registerItem("mycelium_boots",
+            new ArmorItem(ModArmorMaterials.MYCELIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
+
+
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(VarietyEnhancedMod.MOD_ID, name), item);
 

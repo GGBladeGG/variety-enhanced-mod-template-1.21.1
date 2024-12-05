@@ -51,6 +51,11 @@ public class ModItemGroups {
                         entries.add(ModItems.DIAMOND_DRILL);
                         entries.add(ModItems.MYCELIUM_DRILL);
 
+                        entries.add(ModItems.MYCELIUM_HELMET);
+                        entries.add(ModItems.MYCELIUM_CHESTPLATE);
+                        entries.add(ModItems.MYCELIUM_LEGGINGS);
+                        entries.add(ModItems.MYCELIUM_BOOTS);
+
 
                     }).build());
 
