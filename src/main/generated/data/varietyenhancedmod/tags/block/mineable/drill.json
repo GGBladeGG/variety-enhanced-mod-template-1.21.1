@@ -1,0 +1,19 @@
+{
+  "values": [
+    "varietyenhancedmod:mycelium_ore",
+    "varietyenhancedmod:deepslate_mycelium_ore",
+    "varietyenhancedmod:mycelium_block",
+    "varietyenhancedmod:block_of_raw_mycelium",
+    "varietyenhancedmod:mycelium_stairs",
+    "varietyenhancedmod:mycelium_slab",
+    "varietyenhancedmod:mycelium_button",
+    "varietyenhancedmod:mycelium_pressure_plate",
+    "varietyenhancedmod:mycelium_fence",
+    "varietyenhancedmod:mycelium_fence_gate",
+    "varietyenhancedmod:mycelium_wall",
+    "varietyenhancedmod:mycelium_door",
+    "varietyenhancedmod:mycelium_trapdoor",
+    "#minecraft:needs_diamond_tool",
+    "#minecraft:mineable/pickaxe"
+  ]
+}

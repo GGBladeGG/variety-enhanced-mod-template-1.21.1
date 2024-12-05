@@ -1,6 +1,7 @@
 package net.blade.varietyenhancedmod.item.custom;
 
 
+import net.blade.varietyenhancedmod.util.ModTags;
 import net.minecraft.item.MiningToolItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.registry.tag.BlockTags;
@@ -16,7 +17,7 @@ import java.util.List;
 
 public class DrillItem extends MiningToolItem {
     public DrillItem(ToolMaterial material, Settings settings) {
-        super(material, BlockTags.PICKAXE_MINEABLE, settings);
+        super(material, ModTags.Blocks.DRILL_MINEABLE, settings);
     }
 
     public static List<BlockPos> getBlocksToBeDestroyed(int range, BlockPos initalBlockPos, ServerPlayerEntity player) {

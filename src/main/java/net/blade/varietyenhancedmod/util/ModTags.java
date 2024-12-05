@@ -18,6 +18,8 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_DIAMOND_DRILL = createTag("needs_diamond_drill");
         public static final TagKey<Block> INCORRECT_FOR_DIAMOND_DRILL = createTag("incorrect_for_diamond_drill");
 
+        public static final TagKey<Block> DRILL_MINEABLE =  createTag("mineable/drill");
+
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(VarietyEnhancedMod.MOD_ID, name));
         }

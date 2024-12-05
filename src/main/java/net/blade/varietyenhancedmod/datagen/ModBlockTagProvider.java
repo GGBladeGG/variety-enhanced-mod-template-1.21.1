@@ -19,7 +19,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE);
+
+
+        getOrCreateTagBuilder(ModTags.Blocks.DRILL_MINEABLE)
                 .add(ModBlocks.MYCELIUM_ORE)
                 .add(ModBlocks.DEEPSLATE_MYCELIUM_ORE)
                 .add(ModBlocks.MYCELIUM_BLOCK)
@@ -32,7 +35,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MYCELIUM_FENCE_GATE)
                 .add(ModBlocks.MYCELIUM_WALL)
                 .add(ModBlocks.MYCELIUM_DOOR)
-                .add(ModBlocks.MYCELIUM_TRAPDOOR);
+                .add(ModBlocks.MYCELIUM_TRAPDOOR)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .addTag(BlockTags.PICKAXE_MINEABLE);
 
 
 
@@ -62,6 +67,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MYCELIUM_WALL)
                 .add(ModBlocks.MYCELIUM_DOOR)
                 .add(ModBlocks.MYCELIUM_TRAPDOOR);
+
+
 
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_MYCELIUM_DRILL)
                 .add(ModBlocks.MYCELIUM_ORE)
